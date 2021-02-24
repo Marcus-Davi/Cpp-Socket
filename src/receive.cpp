@@ -64,7 +64,7 @@ int main(int argc, char const *argv[])
 
 		recv(new_socket,buffer,1024,0);
 		printf("%s\n",buffer ); 
-		send(new_socket , output_msg.c_str(),output_msg.size(),0);
+		// send(new_socket , output_msg.c_str(),output_msg.size(),0);
 	}
 		return 0; 
 } 
