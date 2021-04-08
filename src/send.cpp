@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <string.h>
 
-#define PORT 5005
+#define PORT 9999
 
 
 int main(){
@@ -26,7 +26,7 @@ int main(){
 		serv_addr.sin_family = AF_INET;
 		serv_addr.sin_port = htons(PORT);
 
-		if(inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr) <= 0 ){
+		if(inet_pton(AF_INET, "100.78.38.55", &serv_addr.sin_addr) <= 0 ){
 				printf("Invalid IP address \n " );
 				return -1;
 		}
